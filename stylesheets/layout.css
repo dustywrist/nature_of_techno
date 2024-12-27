@@ -69,12 +69,7 @@ body {
 } 
  
  
-@keyframes smena { 
 
-  0%, 100% {background-color: #EAFE01; border-color: #FFF;} 
-  50% {background-color: #ffffff; border-color: #EAFE01;}  
-
-} 
  
  
 .kvadratik:hover { 
@@ -124,13 +119,6 @@ body {
 } 
 
 
-@keyframes ageline { 
-
-    0% { background-position: 0 0; }  
-    100% { background-position: 80% 0; }
-
-}
-
 
 
 
@@ -161,16 +149,7 @@ body {
   animation: walkflower 2s steps(1) infinite; 
   
 } 
-
-
-@keyframes walkflower { 
-
-  0%   {background-image: url(../img/flower1.svg); background-repeat: no-repeat;} 
-  25%  {background-image: url(../img/flower2.svg); background-repeat: no-repeat;} 
-  50%  {background-image: url(../img/flower3.svg); background-repeat: no-repeat;} 
-  75%  {background-image: url(../img/flower4.svg); background-repeat: no-repeat;} 
-
-} 
+ 
 
 
 .flower_squer:hover {
@@ -307,13 +286,6 @@ body {
 }
 
 
-@keyframes spin {
-
-  from { transform: rotate(0deg);}
-  to { transform: rotate(360deg);}
-
-}
-
 .plastinka img:hover {
 
   animation-duration: 1s;
@@ -401,28 +373,6 @@ body {
 .slider_box:hover .volume_button_1 {
 
   animation-play-state: paused;
-
-}
-
-
-@keyframes button1 {
-
-  0%, 50%, 100% {}
-  20% {transform: translateY(+10vw)}
-  40% {transform: translateY(+3vw)}
-  60% {transform: translateY(+7vw)}
-  80% {transform: translateY(+20vw)}
-
-} 
-
-
-@keyframes volumeanimatic {
-
-  0%, 50%, 100%{}
-  20% {transform: translateY(+10vw)}
-  40% {transform: translateY(+3vw)}
-  60% {transform: translateY(+7vw)}
-  80% {transform: translateY(+20vw)}
 
 }
 
@@ -585,13 +535,6 @@ body {
 }
 
 
-@keyframes afishaanimatic { 
-
-  0% {transform: translate(-10%, 0);} 
-  100% {transform: translate(-40%, 0);} 
-
-}  
-
 
 .afisha:hover {
 
@@ -638,16 +581,6 @@ body {
 }
 
 
-@keyframes  dance_flower { 
-
-  0%, 100%  {background-image: url(../img/flowerdabce1.svg); background-repeat: no-repeat;} 
-  50%  {background-image: url(../img/flowerdance2.svg); background-repeat: no-repeat;} 
-  
-} 
-
-
-
-
 /* крутящийся контроллер*/
 
 .kontroller {
@@ -682,13 +615,6 @@ body {
 
 }
 
-
-@keyframes spin2{
-
-  0%, 100% {transform: rotate(0deg);}
-  50% {transform: rotate(180deg);}
-
-}
 
 
 .controllerin img:hover {
@@ -790,13 +716,6 @@ body {
 }
 
 
-@keyframes dataanimatic { 
-
-  0% {transform: translate(0%, 0);} 
-  100% {transform: translate(-100%, 0);} 
-
-}  
-
 
 .line_data_item:hover {
 
@@ -855,164 +774,81 @@ body {
 
 /* анимация каждой палочки */
 
-  .bar_1 {
+.bar_1 {
 
-    animation: work_1 1.5s linear infinite;
+  animation: work_1 1.5s linear infinite;
 
-  }
+}
 
-  @keyframes work_1 {
 
-    0%, 100% { height: 7vw; }
-    50% { height: 14vw; }
+.bar_2 {
 
-  }
+  animation: work_2 1.5s linear infinite;
 
+}
 
-  .bar_2 {
 
-    animation: work_2 1.5s linear infinite;
+.bar_3 {
 
-  }
+  animation: work_3 2s linear infinite;
 
+}
 
-  @keyframes work_2 {
 
-    0%, 100% { height: 17vw; }
-    50% { height: 5vw; }
+.bar_4 {
 
-  }
+  animation: work_4 1.5s linear infinite;
 
+}
 
-  .bar_3 {
 
-    animation: work_3 2s linear infinite;
+.bar_5 {
 
-  }
+  animation: work_5 1.5s linear infinite;
 
-  @keyframes work_3 {
-    
-    0%, 100% { height: 10vw; }
-    50% { height: 18vw; }
+}
 
-  }
 
+.bar_6 {
 
-  .bar_4 {
+  animation: work_6 1.5s linear infinite;
 
-    animation: work_4 1.5s linear infinite;
+}
 
-  }
 
-  @keyframes work_4 {
+.bar_7 {
 
-    0%, 100% { height: 6vw; }
-    50% { height: 11vw; }
+  animation: work_7 1.5s linear infinite;
 
-  }
+}
 
 
-  .bar_5 {
+.bar_8 {
 
-    animation: work_5 1.5s linear infinite;
+  animation: work_8 1.5s linear infinite;
 
-  }
+}
 
-  @keyframes work_5 {
 
-    0%, 100% { height: 14vw; }
-    50% { height: 9vw; }
+.bar_9 {
 
-  }
+  animation: work_9 1.5s linear infinite;
 
+}
 
-  .bar_6 {
 
-    animation: work_6 1.5s linear infinite;
+.bar_10 {
 
-  }
+  animation: work_10 1.5s linear infinite;
 
+}
 
-  @keyframes work_6 {
 
-    0%, 100% { height: 18vw; }
-    50% { height: 7vw; }
+.bar_11 {
 
-  }
+  animation: work_11 1.5s linear infinite;
 
-
-  .bar_7 {
-
-    animation: work_7 1.5s linear infinite;
-
-  }
-
-
-  @keyframes work_7 {
-
-    0%, 100% { height: 4vw; }
-    50% { height: 12vw; }
-
-  }
-
-
-  .bar_8 {
-
-    animation: work_8 1.5s linear infinite;
-
-  }
-
-
-  @keyframes work_8 {
-
-    0%, 100% { height: 13vw; }
-    50% { height: 9vw; }
-
-  }
-
-
-  .bar_9 {
-
-    animation: work_9 1.5s linear infinite;
-
-  }
-
-  @keyframes work_9 {
-
-    0%, 100% { height: 16vw; }
-    50% { height: 2vw; }
-
-  }
-
-
-  .bar_10 {
-
-    animation: work_10 1.5s linear infinite;
-
-  }
-
-
-  @keyframes work_10 {
-
-    0%, 100% { height: 13vw; }
-    50% { height: 1vw; }
-
-  }
-
-
-  .bar_11 {
-
-    animation: work_11 1.5s linear infinite;
-
-  }
-
-  @keyframes work_11 {
-
-    0%, 100% { height: 18vw; }
-    50% { height: 11vw; }
-
-  }
-
+}
 
 /* кнопочка */
 
@@ -1093,13 +929,6 @@ body {
 
 }
 
-
-@keyframes mynameanimatic { 
-
-  0%{transform: translate(-10%, 0);} 
-  100%{transform: translate(-40%, 0);} 
-
-}  
 
 .my_name_text:hover {
 
