@@ -666,7 +666,7 @@ body {
 
   .controllerin img{
     padding: 2vw;
-    width: 75%;
+    width: 100%;
     animation: spin 5s linear infinite; /* Базовая анимация вращения */
     transition: animation-duration 0.3s ease;
     animation: spin2 5s infinite linear;
