@@ -16,8 +16,6 @@ body {
 } 
 
 
-
-
 /*приветствующий экран*/
 
 .hiscreen {
@@ -504,6 +502,7 @@ body {
 
 }
 
+
 .dg2:hover {
 
  transition: 0.9s;
@@ -588,8 +587,8 @@ body {
 
 @keyframes afishaanimatic { 
 
-  0%{transform: translate(-10%, 0);} 
-  100%{transform: translate(-40%, 0);} 
+  0% {transform: translate(-10%, 0);} 
+  100% {transform: translate(-40%, 0);} 
 
 }  
 
@@ -599,6 +598,8 @@ body {
   animation-duration: 10s;
 
 }
+
+
 
 /* второйа анимационный блок */ 
 
@@ -612,6 +613,9 @@ body {
 
 }
 
+
+
+/* танцующий цветок */
 
 .flower_kvadrat {
 
@@ -644,6 +648,8 @@ body {
 
 
 
+/* крутящийся контроллер*/
+
 .kontroller {
 
   margin-left: -0.45vw;
@@ -658,75 +664,107 @@ body {
 
 }
 
-  .controllerin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.controllerin {
 
-  .controllerin img{
-    padding: 2vw;
-    width: 100%;
-    animation: spin 5s linear infinite; /* Базовая анимация вращения */
-    transition: animation-duration 0.3s ease;
-    animation: spin2 5s infinite linear;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  @keyframes spin2{
-    0% {transform: rotate(0deg);}
-    50% {transform: rotate(180deg);}
-    100% {transform: rotate(0deg);}
-  }
-
-  .controllerin img:hover {
-    animation-play-state: paused;
-  }
-
-  .flower_pixel {
-    margin-left: -0.45vw;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    overflow: hidden;
-    position: relative;
-    width: 40vw;
-    height: 38vw;
-    border: 0.5vw solid #FFF;
-  }
-  
-  .pixel {
-    width: 5vw;
-    height: 5vw;
-    background-color: black;
-    box-sizing: border-box;
-    border: 0.1vw solid white;
-    transition: background-color 0.3s ease;
-  }
-  
-  .pixel:nth-child(odd) {
-    background-color: white;
-  }
-  
-  .flower_pixel:hover .pixel {
-    background-color: black;
-  }
-  
-  .flower_pixel:hover .pixel:hover {
-    background-color: #EAFE01;
-  }
-
-  .line_data {
-    position: absolute;
-    margin-top: 30.47vw;
-    margin-left: 29.95vw;
-    overflow: hidden;
-    width: 69.06vw;
-    height: 13.55vw;
-    border: 0.5vw solid #FFF;
-    background-color: #EAFE01;
 }
 
+.controllerin img{
+
+  padding: 2vw;
+  width: 100%;
+  animation: spin 5s linear infinite; 
+  transition: animation-duration 0.3s ease;
+  animation: spin2 5s infinite linear;
+
+}
+
+
+@keyframes spin2{
+
+  0%, 100% {transform: rotate(0deg);}
+  50% {transform: rotate(180deg);}
+
+}
+
+
+.controllerin img:hover {
+
+  animation-play-state: paused;
+
+}
+
+
+
+/* квадратики цветочные с анимашкой */
+
+.flower_pixel {
+
+  margin-left: -0.45vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  width: 40vw;
+  height: 38vw;
+  border: 0.5vw solid #FFF;
+
+}
+
+.pixel {
+
+  width: 5vw;
+  height: 5vw;
+  background-color: black;
+  box-sizing: border-box;
+  border: 0.1vw solid white;
+  transition: background-color 0.3s ease;
+
+}
+
+
+.pixel:nth-child(odd) {
+
+  background-color: white;
+
+}
+
+
+.flower_pixel:hover .pixel {
+
+  background-color: black;
+
+}
+
+.flower_pixel:hover .pixel:hover {
+
+  background-color: #EAFE01;
+
+}
+
+
+/* бегущая строка с датай и местом*/ 
+
+.line_data {
+
+  position: absolute;
+  margin-top: 30.47vw;
+  margin-left: 29.95vw;
+  overflow: hidden;
+  width: 69.06vw;
+  height: 13.55vw;
+  border: 0.5vw solid #FFF;
+  background-color: #EAFE01;
+
+}
+
+
 .line_data_intro {
+
   white-space: nowrap; 
   display: flex; 
   flex-direction: row; 
@@ -734,11 +772,13 @@ body {
   justify-content: space-around; 
   padding-top: 5%; 
   padding-bottom: 5%; 
-  
+
 
 }
 
+
 .line_data_item {
+
   font-family: 'InterTightMedium'; 
   margin: 0; 
   padding: 0 0.7%; 
@@ -746,258 +786,326 @@ body {
   letter-spacing: -0.1vw;
   color: rgb(0, 0, 0);
   animation: dataanimatic 20s infinite linear; 
+
+}
+
+
+@keyframes dataanimatic { 
+
+  0% {transform: translate(0%, 0);} 
+  100% {transform: translate(-100%, 0);} 
+
+}  
+
+
+.line_data_item:hover {
+
+  animation-duration: 10s;
+
+}
+
+
+/* блок с анимацией по тригеру*/ 
+
+.third_animation_line {
+
+  height: 35vw;
+  position: relative;
+  display: flex;
+  border: 0.5vw solid #FFF;
+  top: -1vw;
+  justify-content: center; 
+  align-items: flex-end;
+  padding: 3vw;
+
+}
+
+.krutayachtuka {
+
+  display: flex;
+  flex-direction: row; 
+  align-items: flex-end; 
+  height: 45vh; 
+  justify-content: center;
+  
+}
+
+
+.kvadrstiki_animatic_hard {
+  
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  gap: 3vw; 
+
+}
+
+
+
+.kvadrstiki_animatic_hard > div {
+
+  width: 5vw;
+  height: 7vw;
+  background-color: #EAFE01;
+
+}
+
+
+
+/* анимация каждой палочки */
+
+  .bar_1 {
+
+    animation: work_1 1.5s linear infinite;
+
   }
 
-  @keyframes dataanimatic { 
-    0%{transform: translate(0%, 0);} 
-    100%{transform: translate(-100%, 0);} 
-  }  
-  
-  
-  .line_data_item:hover {
-    animation-duration: 10s;
+  @keyframes work_1 {
+
+    0%, 100% { height: 7vw; }
+    50% { height: 14vw; }
+
   }
 
 
-  .third_animation_line {
-    height: 35vw;
-    position: relative;
-    display: flex;
-    border: 0.5vw solid #FFF;
-    top: -1vw;
-    justify-content: center; /* Центрирование содержимого по горизонтали */
-    align-items: flex-end; /* Центрирование содержимого по вертикали */
-    padding: 3vw;
+  .bar_2 {
+
+    animation: work_2 1.5s linear infinite;
+
   }
-  
-  .krutayachtuka {
-    display: flex;
-    flex-direction: row; /* Расположение элементов в строку */
-    align-items: flex-end; /* Выравнивание по нижнему краю */
-    height: 45vh; /* Высота контейнера */
-    justify-content: center;
+
+
+  @keyframes work_2 {
+
+    0%, 100% { height: 17vw; }
+    50% { height: 5vw; }
+
   }
-  
-  .kvadrstiki_animatic_hard {
-    align-items: flex-end;
-    display: flex;
-    flex-direction: row; /* Расположение всех bar элементов в одну линию */
-    justify-content: space-between; /* Равномерное распределение элементов */
-    gap: 3vw; /* Фиксированные расстояния между элементами */
+
+
+  .bar_3 {
+
+    animation: work_3 2s linear infinite;
+
   }
-  
-  .kvadrstiki_animatic_hard > div {
-    width: 5vw;
-    height: 7vw;
-    background-color: #EAFE01; /* Цвет баров */
+
+  @keyframes work_3 {
+    
+    0%, 100% { height: 10vw; }
+    50% { height: 18vw; }
+
   }
-  
 
 
-  /* анимация каждой палочки */
+  .bar_4 {
 
- .bar_1 {
-  animation: work_1 1.5s linear infinite;
- }
+    animation: work_4 1.5s linear infinite;
 
- @keyframes work_1 {
-  0%, 100% { height: 7vw; }
-  50% { height: 14vw; }
-  
- }
+  }
 
+  @keyframes work_4 {
 
+    0%, 100% { height: 6vw; }
+    50% { height: 11vw; }
 
-
- .bar_2 {
-  animation: work_2 1.5s linear infinite;
- }
-
- @keyframes work_2 {
-  0%, 100% { height: 17vw; }
-  50% { height: 5vw; }
-  
- }
+  }
 
 
+  .bar_5 {
+
+    animation: work_5 1.5s linear infinite;
+
+  }
+
+  @keyframes work_5 {
+
+    0%, 100% { height: 14vw; }
+    50% { height: 9vw; }
+
+  }
 
 
-  
- .bar_3 {
-  animation: work_3 2s linear infinite;
- }
+  .bar_6 {
 
- @keyframes work_3 {
-  0%, 100% { height: 10vw; }
-  50% { height: 18vw; }
-  
- }
+    animation: work_6 1.5s linear infinite;
+
+  }
 
 
- .bar_4 {
-  animation: work_4 1.5s linear infinite;
- }
+  @keyframes work_6 {
 
- @keyframes work_4 {
-  0%, 100% { height: 6vw; }
-  50% { height: 11vw; }
-  
- }
+    0%, 100% { height: 18vw; }
+    50% { height: 7vw; }
+
+  }
 
 
+  .bar_7 {
 
- .bar_5 {
-  animation: work_5 1.5s linear infinite;
- }
+    animation: work_7 1.5s linear infinite;
 
- @keyframes work_5 {
-  0%, 100% { height: 14vw; }
-  50% { height: 9vw; }
-  
- }
+  }
 
 
- .bar_6 {
-  animation: work_6 1.5s linear infinite;
- }
+  @keyframes work_7 {
 
- @keyframes work_6 {
-  0%, 100% { height: 18vw; }
-  50% { height: 7vw; }
-  
- }
+    0%, 100% { height: 4vw; }
+    50% { height: 12vw; }
+
+  }
 
 
+  .bar_8 {
 
- .bar_7 {
-  animation: work_7 1.5s linear infinite;
- }
+    animation: work_8 1.5s linear infinite;
 
- @keyframes work_7 {
-  0%, 100% { height: 4vw; }
-  50% { height: 12vw; }
-  
- }
+  }
 
 
- .bar_8 {
-  animation: work_8 1.5s linear infinite;
- }
+  @keyframes work_8 {
 
- @keyframes work_8 {
-  0%, 100% { height: 13vw; }
-  50% { height: 9vw; }
-  
- }
+    0%, 100% { height: 13vw; }
+    50% { height: 9vw; }
+
+  }
 
 
- .bar_9 {
-  animation: work_9 1.5s linear infinite;
- }
+  .bar_9 {
 
- @keyframes work_9 {
-  0%, 100% { height: 16vw; }
-  50% { height: 2vw; }
-  
- }
+    animation: work_9 1.5s linear infinite;
 
+  }
 
- .bar_10 {
-  animation: work_10 1.5s linear infinite;
- }
+  @keyframes work_9 {
 
- @keyframes work_10 {
-  0%, 100% { height: 13vw; }
-  50% { height: 1vw; }
-  
- }
+    0%, 100% { height: 16vw; }
+    50% { height: 2vw; }
 
- .bar_11 {
-  animation: work_11 1.5s linear infinite;
- }
-
- @keyframes work_11 {
-  0%, 100% { height: 18vw; }
-  50% { height: 11vw; }
-  
- }
+  }
 
 
- .bottomhover {
-    display: flex; 
-    border: 0.5vw solid #000000; 
-    padding: 1.5vw 8vw; 
-    justify-content: center; 
-    align-items: center; 
-    position: absolute; 
-    margin: 27vw 12vw; 
-    color: #000000; 
-    background-color: #ffffff;
-    font-family: 'InterTightSemiBold';
-    font-size: 4vw;
-    letter-spacing: -0.3vw;
+  .bar_10 {
 
- }
+    animation: work_10 1.5s linear infinite;
+
+  }
+
+
+  @keyframes work_10 {
+
+    0%, 100% { height: 13vw; }
+    50% { height: 1vw; }
+
+  }
+
+
+  .bar_11 {
+
+    animation: work_11 1.5s linear infinite;
+
+  }
+
+  @keyframes work_11 {
+
+    0%, 100% { height: 18vw; }
+    50% { height: 11vw; }
+
+  }
+
+
+/* кнопочка */
+
+.bottomhover {
+
+  display: flex; 
+  border: 0.5vw solid #000000; 
+  padding: 1.5vw 8vw; 
+  justify-content: center; 
+  align-items: center; 
+  position: absolute; 
+  margin: 27vw 12vw; 
+  color: #000000; 
+  background-color: #ffffff;
+  font-family: 'InterTightSemiBold';
+  font-size: 4vw;
+  letter-spacing: -0.3vw;
+
+}
 
 
 .bottomhover:hover {
+
  background-color: #EAFE01;
  border: 0.5vw solid #ffffff; 
+
 }
 
 .bottomhover:hover ~ .krutayachtuka .kvadrstiki_animatic_hard > div {
+
   animation-duration: 0.5s; 
+
 }
 
 
+/* бегущая строка заключительная */
 
 .my_name {
+
   position: relative; 
-    background-color: #EAFE01; 
-    border-bottom: 0.5vw solid #FFF;; 
-    border-top: 0.5vw solid #FFF; 
-    outline-offset: -1vw; 
-    display: flex; 
-    flex-direction: row; 
-    align-items: center; 
-    justify-content: space-around; 
-    overflow: hidden; 
-    top: -1.5vw;
-    
+  background-color: #EAFE01; 
+  border-bottom: 0.5vw solid #FFF;; 
+  border-top: 0.5vw solid #FFF; 
+  outline-offset: -1vw; 
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: space-around; 
+  overflow: hidden; 
+  top: -1.5vw;
+
 }
 
 .my_name_text {
-  white-space: nowrap; 
-        display: flex; 
-        flex-direction: row; 
-        align-items: center; 
-        justify-content: space-around; 
-        padding-top: 2%; 
-        padding-bottom: 2%; 
-        text-transform: uppercase; 
-        animation: mynameanimatic 10s infinite linear; 
-}
 
+  white-space: nowrap; 
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: space-around; 
+  padding-top: 2%; 
+  padding-bottom: 2%; 
+  text-transform: uppercase; 
+  animation: mynameanimatic 10s infinite linear; 
+
+}
 
 
 
 .my_name_text_item {
 
-font-family: 'InterTightMedium'; 
-margin: 0; 
-padding: 0 0.7%; 
-font-size: 6vw; 
-letter-spacing: -0.1vw;
-color: rgb(0, 0, 0);  }
+  font-family: 'InterTightMedium'; 
+  margin: 0; 
+  padding: 0 0.7%; 
+  font-size: 6vw; 
+  letter-spacing: -0.1vw;
+  color: rgb(0, 0, 0);  
 
-  @keyframes mynameanimatic { 
-    0%{transform: translate(-10%, 0);} 
-    100%{transform: translate(-40%, 0);} 
-  }  
+}
 
-  .my_name_text:hover {
-    animation-play-state: paused; 
-  }
+
+@keyframes mynameanimatic { 
+
+  0%{transform: translate(-10%, 0);} 
+  100%{transform: translate(-40%, 0);} 
+
+}  
+
+.my_name_text:hover {
+
+  animation-play-state: paused; 
+
+}
 
 
 
